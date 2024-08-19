@@ -14,15 +14,18 @@ export default function Home() {
 				</div>
 				<div>
 					<div>
-						<Card className="flex flex-col gap-5 p-4 w-[200px] h-auto">
-							<CardTitle className="text-2sm text-bebas font-semibold">
-								Don't have an account yet?
+						<Card className="flex flex-col justify- gap-5 p-4 w-[210px] h-auto dark:bg-neutral-700 self-center bg-neutral-100">
+							<CardTitle className="text-2sm text-bebas font-bold">
+								Don't have an account?
 							</CardTitle>
-							<CardDescription className="text-sm font-patrick">
-								Don't waste your time and join us, we will give you exactly what you need
+							<hr />
+							<CardDescription className="text-sm font-patrick font-bold ">
+								Don't waste your time and join us, we will give you exactly what you need.
 							</CardDescription>
 							<CardFooter>
-								<Button className="font-ubuntu">Join Us!</Button>
+								<Button className="font-ubuntu h-5 justify-self-center text-sm  ">
+									Sign Up Now!
+								</Button>
 							</CardFooter>
 						</Card>
 					</div>
