@@ -13,38 +13,36 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { ModeToggle } from "./ToggleTheme";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Search, SearchIcon } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
 	{
-		title: "Shop",
-		href: "/docs/primitives/alert-dialog",
+		title: "Template For Shopping",
+		href: "/shopping",
 		description: "Div into our shops and found interesting items for you <3",
 	},
 	{
-		title: "Hover Card",
-		href: "/docs/primitives/hover-card",
-		description: "For sighted users to preview content available behind a link.",
+		title: "Templade For Sellers",
+		href: "/templade4Sellers",
+		description: "Need to sell anything? you found the right place.",
 	},
 	{
-		title: "Progress",
-		href: "/docs/primitives/progress",
+		title: "About us",
+		href: "/aboutus",
 		description:
-			"Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+			"See more about us and our vision.",
 	},
 	{
-		title: "Scroll-area",
-		href: "/docs/primitives/scroll-area",
-		description: "Visually or semantically separates content.",
+		title: "Contact",
+		href: "/contact",
+		description: "Do you wanna contact us? try looking this page.",
 	},
 	{
-		title: "Tabs",
-		href: "/docs/primitives/tabs",
-		description:
-			"A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-	},
-	{
-		title: "Tooltip",
-		href: "/docs/primitives/tooltip",
+		title: "Contact Developer",
+		href: "/contact/developer",
 		description:
 			"A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
 	},
@@ -52,30 +50,14 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
 	return (
-		<NavigationMenu>
-			<div className="flex justify-between">
-				<NavigationMenuList>
+		<div className="flex justify-between">
+			<NavigationMenu className=" w-full">
+				<Link href={"/"}>
+					<h1 className="font-bebas p-3 hover:cursor-pointer">Templade</h1>
+				</Link>
+				<NavigationMenuList className={"flex"}>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>Templade</NavigationMenuTrigger>
-						<NavigationMenuContent>
-							<ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-								<ListItem href="/" title="Home">
-									Re-usable components built using Radix UI and Tailwind CSS.
-								</ListItem>
-								<ListItem href="/about" title="About us">
-									Re-usable components built using Radix UI and Tailwind CSS.
-								</ListItem>
-								<ListItem href="/contact" title="Contact">
-									How to install dependencies and structure your app.
-								</ListItem>
-								<ListItem href="/docs/primitives/typography" title="Typography">
-									Styles for headings, paragraphs, lists...etc
-								</ListItem>
-							</ul>
-						</NavigationMenuContent>
-					</NavigationMenuItem>
-					<NavigationMenuItem>
-						<NavigationMenuTrigger>Components</NavigationMenuTrigger>
+						<NavigationMenuTrigger className="font-bebas text-2sm">MENU</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
 								{components.map((component) => (
@@ -86,16 +68,35 @@ export function NavMenu() {
 							</ul>
 						</NavigationMenuContent>
 					</NavigationMenuItem>
-					<NavigationMenuItem>
-						<Link href="/docs" legacyBehavior passHref>
+				</NavigationMenuList>
+			</NavigationMenu>
+			<NavigationMenu className="p-2">
+				<NavigationMenuList  className="mx-2">
+                    <Button variant="outline" size="icon">
+                        <Search className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 " />
+
+                    </Button>
+					<Input type="text" placeholder="Search" />
+				</NavigationMenuList>
+				<NavigationMenuList className={"flex"}>
+					<NavigationMenuItem className="font-bebas">
+						<Link href="/Login" legacyBehavior passHref>
 							<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-								Documentation
+								Log In
+							</NavigationMenuLink>
+						</Link>
+						<Link href="/Signup" legacyBehavior passHref>
+							<NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
+								Sign Up
 							</NavigationMenuLink>
 						</Link>
 					</NavigationMenuItem>
+					<NavigationMenuItem>
+						<ModeToggle />
+					</NavigationMenuItem>
 				</NavigationMenuList>
-			</div>
-		</NavigationMenu>
+			</NavigationMenu>
+		</div>
 	);
 }
 
