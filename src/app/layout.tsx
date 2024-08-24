@@ -38,10 +38,12 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-          <NavMenu />
+					<NavMenu />
 					{children}
+					<div>
+						
+					</div>
 				</ThemeProvider>
-				
 			</body>
 		</html>
 	);

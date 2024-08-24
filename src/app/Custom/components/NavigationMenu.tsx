@@ -71,13 +71,6 @@ export function NavMenu() {
 				</NavigationMenuList>
 			</NavigationMenu>
 			<NavigationMenu className="p-2">
-				<NavigationMenuList  className="mx-2">
-                    <Button variant="outline" size="icon">
-                        <Search className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 " />
-
-                    </Button>
-					<Input type="text" placeholder="Search" />
-				</NavigationMenuList>
 				<NavigationMenuList className={"flex"}>
 					<NavigationMenuItem className="font-bebas">
 						<Link href="/Login" legacyBehavior passHref>
