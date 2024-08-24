@@ -22,7 +22,7 @@ export default function Home() {
 									Don&apos;t have an account?
 								</CardTitle>
 								<hr />
-								<CardDescription className="text-2sm font-patrick font-bold ">
+								<CardDescription className="text-sm font-patrick font-bold ">
 									Don&apos;t waste your time and join us, we will give you exactly what you need.
 								</CardDescription>
 								<Button className="font-ubuntu h-8 justify-self-center text-sm  ">
