@@ -19,11 +19,11 @@ export default function Home() {
 						<div>
 							<Card className="flex flex-col justify- gap-5 p-4 w-[250px] h-auto dark:bg-neutral-700 self-center bg-neutral-100">
 								<CardTitle className="text-lg text-bebas font-bold">
-									Don't have an account?
+									Dont have an account?
 								</CardTitle>
 								<hr />
 								<CardDescription className="text-2sm font-patrick font-bold ">
-									Don't waste your time and join us, we will give you exactly what you need.
+									Dont waste your time and join us, we will give you exactly what you need.
 								</CardDescription>
 								<Button className="font-ubuntu h-8 justify-self-center text-sm  ">
 									Sign Up Now!
