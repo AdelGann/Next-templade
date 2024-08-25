@@ -74,7 +74,7 @@ export default function Home() {
 						</h5>
 					</div>
 					<div className="flex gap-4 w-full p-4 flex-wrap">
-						{products.map((_, index) => (
+						{products.map((key, index) => (
 							<Card className="flex flex-col w-auto">
 								<CardTitle className="text-xl text-bebas w-56 font-bold p-3">
 									<div className="flex gap-5">
