@@ -13,7 +13,7 @@ import xbox from "@/app/assets/Items/xbox-x.png";
 import iphone from "@/app/assets/Items/Iphone-15.png";
 import SmartTv from "@/app/assets/Items/SmartTv.png";
 import PlayStationV from "@/app/assets/Items/PlayStationV.png"
-import nintendo from "@/app/assets/Items/Switch.png"
+import nintendo from "@/app/assets/Items/switch.png"
 
 export default function Home() {
 	return (
