@@ -14,9 +14,6 @@ import {
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "./ToggleTheme";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Search, SearchIcon } from "lucide-react";
 
 const components: { title: string; href: string; description: string }[] = [
 	{
@@ -50,7 +47,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
 	return (
-		<div className="flex justify-between">
+		<div className="flex justify-between flex-wrap">
 			<NavigationMenu className=" w-full">
 				<Link href={"/"}>
 					<h1 className="font-bebas p-3 hover:cursor-pointer">Templade</h1>
@@ -59,7 +56,7 @@ export function NavMenu() {
 					<NavigationMenuItem>
 						<NavigationMenuTrigger className="font-bebas text-2sm">MENU</NavigationMenuTrigger>
 						<NavigationMenuContent>
-							<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+							<ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
 								{components.map((component) => (
 									<ListItem key={component.title} title={component.title} href={component.href}>
 										{component.description}
