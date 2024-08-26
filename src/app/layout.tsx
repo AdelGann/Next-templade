@@ -12,8 +12,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-	title: "Template",
-	description: "Template Next Nro.1",
+	title: "Templade",
+	description: "Templade Next Nro.1",
 };
 
 export default function RootLayout({

@@ -8,34 +8,43 @@ import { useRouter } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa6";
 
-export default function LoginPage() {
+export default function SiginPage() {
 	const router = useRouter();
 
 	return (
 		<section className="flex flex-col sm:flex-row bg-slate-100">
-			<div className="px-4 hidden lg:block sm:px-16 gap-5 bg-[url('/login.jpg')] w-[800px] bg-no-repeat bg-cover bg-blend-multiply bg-slate-500 dark:bg-slate-700 w-full min-h-screen min-h-screen-100%"></div>
-			<div className="flex w-100 p-12 min-h-screen lg:p-24 2xl:p-32 dark:bg-neutral-800 items-center justify-center w-full">
+			<div className="flex w-100 p-12 min-h-screen lg:p-24 2xl:p-32 dark:bg-neutral-700 items-center justify-center w-full">
 				<div>
 					<div className="flex justify-center p-5 text-6xl font-bebas font-bold">
 						<h1>Templade</h1>
 					</div>
 					<div className="flex justify-center self-center items-center content-center">
-						<Card className="flex flex-col justify-center gap-5 p-4 w-[300px] lg:w-[400px] h-auto dark:bg-neutral-600 self-center bg-neutral-100">
-							<CardTitle className="flex justify-center font-bebas font-bold text-3xl">
-								Sign In !
-							</CardTitle>
+						<Card className="flex flex-col justify-center gap-5 p-4 w-[350px] lg:w-[480px] h-auto dark:bg-neutral-600 self-center bg-neutral-100">
+							<div className="flex justify-center">
+								<h2 className="font-bebas font-bold text-3xl">Time to Join Us!</h2>
+							</div>
 							<form>
-								<div className="flex flex-col gap-5 ">
-									<Input
-										type="text"
-										placeholder="Username"
-										className="font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
-									/>
-									<Input
-										type="password"
-										placeholder="Password"
-										className=" font-bebas text-lg h-10 hover:border-2  hover:border-neutral-600 dark:hover:border-neutral-200"
-									/>
+								<div className="flex flex-col gap-5">
+									<div className="flex gap-5">
+										<Input type="text" placeholder="Name" className="font-bebas text-lg h-10" />
+										<Input type="text" placeholder="Lastname" className="font-bebas text-lg h-10" />
+									</div>
+									<div className="flex flex-col gap-5">
+										<Input type="text" placeholder="Username" className="font-bebas text-lg h-10" />
+										<Input type="mail" placeholder="Email" className="font-bebas text-lg h-10" />
+									</div>
+									<div className="flex gap-5">
+										<Input
+											type="password"
+											placeholder="Password"
+											className=" font-bebas text-lg h-10"
+										/>
+										<Input
+											type="password"
+											placeholder="Repeat Password"
+											className=" font-bebas text-lg h-10"
+										/>
+									</div>
 								</div>
 							</form>
 
@@ -44,7 +53,7 @@ export default function LoginPage() {
 									className="font-ubuntu h-10 w-[268px] justify-self-center text-sm"
 									type="submit"
 								>
-									Log in
+									Register Now!
 								</Button>
 							</div>
 							<Separator />
@@ -68,9 +77,9 @@ export default function LoginPage() {
 								</Button>
 							</CardFooter>
 							<p className="font-ubuntu text-2sm text-gray-600 dark:text-white">
-								Don&apos;t have an account yet?{" "}
-								<a href="/signup" className="font-bold hover:underline">
-									Join Us!
+								Already have an account?{" "}
+								<a href="/login" className="font-bold hover:underline">
+									Log in!
 								</a>
 							</p>
 						</Card>

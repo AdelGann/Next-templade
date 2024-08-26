@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 
@@ -15,6 +15,7 @@ import SmartTv from "@/app/assets/Items/SmartTv.png";
 import PlayStationV from "@/app/assets/Items/PlayStationV.png";
 import nintendo from "@/app/assets/Items/switch.png";
 import Samsung from "@/app/assets/Items/Samsung.png";
+
 export default function Home() {
 	return (
 		<main className="flex sm:flex-row flex-col">
@@ -23,10 +24,18 @@ export default function Home() {
 					<h1 className="text-8xl text-white font-bebas font-bold">Templade</h1>
 				</div>
 				<div className="w-full flex gap-5 ">
-					<Button variant="outline" size="icon" className="">
+					<Button
+						variant="outline"
+						size="icon"
+						className="hover:border-2 dark:hover:border-neutral-200 hover:border-neutral-700"
+					>
 						<Search className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
 					</Button>
-					<Input type="text" placeholder="Search" className="text-white font-bebas text-lg" />
+					<Input
+						type="text"
+						placeholder="Search"
+						className="text-white font-bebas text-lg hover:border-2 hover:border-neutral-200"
+					/>
 				</div>
 				<div>
 					<p className="text-slate-200 text-sm font-ubuntu">

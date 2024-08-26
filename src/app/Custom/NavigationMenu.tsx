@@ -75,7 +75,7 @@ export function NavMenu() {
 								Log In
 							</NavigationMenuLink>
 						</Link>
-						<Link href="/Signup" legacyBehavior passHref>
+						<Link href="/signup" legacyBehavior passHref>
 							<NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
 								Sign Up
 							</NavigationMenuLink>
