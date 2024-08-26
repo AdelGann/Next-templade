@@ -27,7 +27,11 @@ export default function LoginPage() {
 							</CardTitle>
 							<form>
 								<div className="flex flex-col gap-5">
-									<Input type="text" placeholder="Username" className="font-bebas text-lg h-10" />
+									<Input
+										type="text"
+										placeholder="Username"
+										className="font-bebas text-lg h-10"
+									/>
 									<Input
 										type="password"
 										placeholder="Password"
