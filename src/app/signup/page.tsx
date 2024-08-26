@@ -26,23 +26,39 @@ export default function SiginPage() {
 							<form>
 								<div className="flex flex-col gap-5">
 									<div className="flex gap-5">
-										<Input type="text" placeholder="Name" className="font-bebas text-lg h-10" />
-										<Input type="text" placeholder="Lastname" className="font-bebas text-lg h-10" />
+										<Input
+											type="text"
+											placeholder="Name"
+											className="font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
+										/>
+										<Input
+											type="text"
+											placeholder="Lastname"
+											className="font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
+										/>
 									</div>
 									<div className="flex flex-col gap-5">
-										<Input type="text" placeholder="Username" className="font-bebas text-lg h-10" />
-										<Input type="mail" placeholder="Email" className="font-bebas text-lg h-10" />
+										<Input
+											type="text"
+											placeholder="Username"
+											className="font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
+										/>
+										<Input
+											type="mail"
+											placeholder="Email"
+											className="font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
+										/>
 									</div>
 									<div className="flex gap-5">
 										<Input
 											type="password"
 											placeholder="Password"
-											className=" font-bebas text-lg h-10"
+											className=" font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
 										/>
 										<Input
 											type="password"
 											placeholder="Repeat Password"
-											className=" font-bebas text-lg h-10"
+											className=" font-bebas text-lg h-10 hover:border-2 hover:border-neutral-600 dark:hover:border-neutral-200 "
 										/>
 									</div>
 								</div>
