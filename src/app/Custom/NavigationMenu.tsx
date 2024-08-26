@@ -13,7 +13,8 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { ModeToggle } from "./ToggleTheme";
+
+import { ModeToggle } from "./ToggleTheme"; 
 
 const components: { title: string; href: string; description: string }[] = [
 	{
@@ -29,8 +30,7 @@ const components: { title: string; href: string; description: string }[] = [
 	{
 		title: "About us",
 		href: "/aboutus",
-		description:
-			"See more about us and our vision.",
+		description: "See more about us and our vision.",
 	},
 	{
 		title: "Contact",
@@ -70,7 +70,7 @@ export function NavMenu() {
 			<NavigationMenu className="p-2">
 				<NavigationMenuList className={"flex"}>
 					<NavigationMenuItem className="font-bebas">
-						<Link href="/Login" legacyBehavior passHref>
+						<Link href="/login" legacyBehavior passHref>
 							<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 								Log In
 							</NavigationMenuLink>
